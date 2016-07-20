@@ -17,3 +17,4 @@ function randomFour() {
 function generate() {
   return randomThree() + "-" + randomThree() + "-" + randomFour()
 }
+
