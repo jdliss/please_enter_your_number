@@ -1,10 +1,15 @@
 $(document).ready(function() {
   $('#number').text(generate());
 
-  $('#no').click(function() {
+  $('#yes').on('click', function() {
+    $('#prompt').html("<h3>Thank You.</h3>");
+  });
+    
+  $('#no').on('click', function() {
     $('#number').text(generate());
   });
-})
+
+});
 
 function randomThree() {
   return Math.floor(Math.random() * (999 - 100 + 1) + 100);  
